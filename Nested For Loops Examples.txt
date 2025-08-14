@@ -1,0 +1,19 @@
+List = [1, 2, 3, 4, 5]
+ = int(input("How many rows:  "))Rows
+TRUEFINALLIST = []
+for x in range(Rows):
+    FinalList = [ ]
+    for n in List:
+        FinalList.append(n * Rows)
+    TRUEFINALLIST.append(FinalList)
+print(TRUEFINALLIST)
+
+Weathers = input("Weathers:  ").split()
+Cols = ["windy", "breezy", "calm"]
+TRUE_FINAL_LIST = []
+for x in Weathers:
+    Weather_Types = []
+    for y in Cols:
+        Weather_Types.append(x + " " + y)
+    TRUE_FINAL_LIST.append(Weather_Types)
+print(TRUE_FINAL_LIST)
