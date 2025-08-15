@@ -1,3 +1,5 @@
+# EXPERIMENTING WITH NESTED FOR LOOPS AND 2D LISTS 8/14/25
+
 List = [1, 2, 3, 4, 5]
  = int(input("How many rows:  "))Rows
 TRUEFINALLIST = []
@@ -16,4 +18,20 @@ for x in Weathers:
     for y in Cols:
         Weather_Types.append(x + " " + y)
     TRUE_FINAL_LIST.append(Weather_Types)
+
 print(TRUE_FINAL_LIST)
+
+# 8/15/25
+
+x = int(input("Number 1:  "))
+y = int(input("Number 2:  "))
+z = int(input("Number 3:  "))
+List = [[0, 1, x], [10, 15, y], [100, 200, 300], [5, 6, z]]
+Rows = 4
+Columns = 3
+LargestNumber = 0
+for r in range(Rows):
+    for c in range(Columns):
+        if List[r][c] > LargestNumber:
+            LargestNumber = List[r][c]
+print(LargestNumber)
